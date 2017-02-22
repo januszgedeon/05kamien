@@ -1,0 +1,109 @@
+body {
+	background: #F7CA18;
+}
+h1 {
+	color: white;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+h2 {
+	color: white;
+	font-weight: 500;
+	padding-bottom: 30px;
+}
+.label {
+	font-weight: 400;
+}
+.label-kamien {
+	background: #333;
+}
+.label-papier {
+	background:  #1E824C;
+}
+.label-nozyce {
+	background:  #F22613;
+}
+.fa-hand-rock-o {
+	color: #333;
+}
+.fa-hand-paper-o {
+	color: #1E824C;
+}
+.fa-hand-scissors-o {
+	color: #F22613;
+}
+.logo {
+	display: inline-block;
+	margin: 0 30px;
+}
+p {
+	font-size: 14px;
+}
+.wybor1:hover {
+	cursor: pointer;
+	color: #8C8C8C;
+}
+.wybor2:hover {
+	cursor: pointer;
+	color: #124F2E;
+}
+.wybor3:hover {
+	cursor: pointer;
+	color: #570E07;
+}
+.logo-kamien {
+	color: #333;
+}
+.logo-papier {
+	color: #1E824C;
+}
+.logo-nozyce {
+	color: #F22613;
+}
+
+.btn-default {
+	font-size: 27px;
+	font-weight: 300;
+	background: #F39C12;
+	border-radius: 7px;
+	color: white;
+	padding: 5px 16px;
+	border: 0;
+	transition: background .4s;
+}
+  .btn-default:hover {
+    background: #AD6F0D;
+    color: white;
+     }
+
+.btn-kamien {
+  font-size: 20px;
+  color: #fff;
+  background: #F22613; }
+
+.btn-papier {
+  font-size: 20px;
+  color: #fff;
+  background: #1E824C; }
+
+.btn-nozyce{
+  font-size: 20px;
+  color: #fff;
+  background: #1F3A93; }
+
+.punkty {
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+.name {
+	font-size: 20px;
+	
+}
+.points {
+  font-size: 40px; }
+
+ .match {
+  background: #e74c3c; }
+  h4 {
+  	padding-top: 0;
+  }

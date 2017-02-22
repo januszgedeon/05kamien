@@ -4,17 +4,18 @@
 	<meta charset="utf-8">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="">
-	<title>Gra</title>
+	<link rel="stylesheet" type="text/css" href="kamien.css">
+	<title>05kamien</title>
 </head>
 <body>
 	<div class="container">
-		<h3 class="text-center">
-			Witaj w grze
-			<span class="label label-default">Kamień</span>
-			<span class="label label-info">Papier</span>
-			<span class="label label-danger">Nożyce</span>
-		</h3>
+		<h1 class="text-center">
+			Witaj w grze<p>&nbsp;</p>
+				<span class="label label-kamien">Kamień</span>
+				<span class="label label-papier">Papier</span>
+				<span class="label label-nozyce">Nożyce</span>			
+			
+		</h1>
 		<p>&nbsp;</p>
 	</div>
 	<div id="js-newGameElement" class="container">
@@ -27,46 +28,51 @@
 	</div>
 	<div id="js-playerPickElement" class="container">
 		<div class="row text-center">
-			<button id="js-playerPick_rock" class="btn">
-				<span class="badge">
-					<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
-				</span>
-				Kamień
-			</button>
-			<button id="js-playerPick_paper"  class="btn">
-				<span class="badge">
-					<i class="fa fa-hand-paper-o" aria-hidden="true"></i>
-				</span>
-				Papier
-			</button>
-			<button id="js-playerPick_scissors"  class="btn">
-				<span class="badge">
-					<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
-				</span>
-				Nożyce
-			</button>
+		<h2>Wybierz:</h2>
+			<div id="js-playerPick_rock"  class="logo"><i class="fa fa-hand-rock-o fa-5x wybor1" aria-hidden="true"></i>
+			<p class="logo-kamien">Kamień</p></div>
+				<div id="js-playerPick_paper" class="logo"><i class="fa fa-hand-paper-o fa-5x wybor2" aria-hidden="true"></i><p class="logo-papier">Papier</p></div>
+				
+			<div id="js-playerPick_scissors" class="logo"><i class="fa fa-hand-scissors-o fa-5x wybor3" aria-hidden="true"></i><p class="logo-nozyce">Nożyce</p></div>
+			
 		</div>
 	</div>
 	<p>&nbsp;</p>
 	<div id="js-resultsTableElement" class="container">
 		<div class="row">
 			<div class="col-xs-5 text-center">
-				<span id="js-playerPoints" class="badge">
+				<span id="js-playerPoints" class="badge punkty">
 					0
-				</span>
-				<span id="js-playerName">
+				</span><br>
+				<span id="js-playerName" class="name">
 					Imię gracza
-				</span>
-			</div>
+				</span><br><br>
+				<div class="playerMatches">
+						<span id="js-playerMatchesWon" class="badge points match">
+							0
+						</span>
+						<span>
+							<h4>Wygranych meczy</h4>
+						</span>
+					</div>
+				</div>
 			<div class="col-xs-2 text-center">
-				VS.
+				<h2>przeciwko</h2>
 			</div>
 			<div class="col-xs-5 text-center">
-				<span id="js-computerPoints" class="badge">
+				<span id="js-computerPoints" class="badge punkty">
 					0
-				</span>
-				Komputer
-			</div>
+					</span><br>
+				<span class="name">Komputer</span><br><br>
+				<div class="computerMatches">
+						<span id="js-computerMatchesWon" class="badge points match">
+							0
+						</span>
+						<span>
+							<h4>Wygranych meczy</h4>
+						</span>
+					</div>
+				</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-5 text-center">
@@ -95,8 +101,7 @@
 			</div>
 		</div>
 	</div>
-
-
+	<h3 id="js-displayWinner" class="text-center winner"></h3>
 	<script src="script.js"></script>
 </body>
 </html>
